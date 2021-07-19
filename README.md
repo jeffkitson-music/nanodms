@@ -8,4 +8,5 @@ Send an HTTP POST request to the file with two parameters:
 
 ## Check Date
 Load the script in your browser or with a standard HTTP GET request.
+
 If today is after the release date, the secret will be revealed.

@@ -1,3 +1,4 @@
+ 
 <?php 
 /*
 	nanodms.php
@@ -25,10 +26,10 @@ else {
 	$datefromfile = fgets($datefile);
 	fclose($datefile);
 	// Declare date variables
-	$today = date("Y/m/d");
-	$releasedate = date($datefromfile);
-	// Date logic: If today is greater than the required check-in/release date, include the secret data in the output.
-	if ($today>$releasedate) {
+	$today = new DateTime();
+	$releasedate = new DateTime($datefromfile);
+	// Date logic: If today is before (less than) the release date, return responsive. Otherwise, release the secret payload.
+	if ($today<$releasedate) {
 	echo '{"status":"responsive"}';
 	}else {
 		echo '{"status":"unresponsive","secret_key":"mysupersecretinfo}';
@@ -36,4 +37,3 @@ else {
 		
 }
 ?> 
-

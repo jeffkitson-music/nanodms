@@ -12,7 +12,7 @@ Send an HTTP POST request to the file with two parameters:
 ## :closed_lock_with_key: Check Date
 Load the script in your browser or with a standard HTTP GET request.
 
-If today is after the release date, the secret payload will be revealed.
+If today is after the release date, the secret payload will be revealed. All responses are in JSON format so as to be easily integrated into other applications.
 
 ## :eyes: Disclaimer
 This is a hobby project and should not be used with any serious applications that include sensitive data (whistleblowers, etc.).

@@ -32,7 +32,7 @@ else {
 	if ($today<$releasedate) {
 	echo '{"status":"responsive"}';
 	}else {
-		echo '{"status":"unresponsive","secret_key":"mysupersecretinfo}';
+		echo '{"status":"unresponsive","secret_key":"mysupersecretinfo"}';
 		}
 		
 }

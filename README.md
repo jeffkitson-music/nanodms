@@ -1,5 +1,5 @@
 # :skull_and_crossbones: nanodms
-A simple dead man's switch in PHP.
+A simple dead man's switch in PHP. [What's a dead man's switch?](https://www.wired.com/2013/07/snowden-dead-mans-switch/)
 
 ## :open_file_folder: Installation/Set-Up
 Edit the file to include your security token and secret payload. Upload to your server.
